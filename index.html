@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barba Shop WebSite Desing - Coding is so easy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/scroll-smooth@1.1.1/dist/index.min.js"></script>
+</head>
+<body>
+    <section id="banner">
+        <img src="img/logo.png" class="logo">
+        <div class="banner-text">
+            <h1>Hair Studio</h1>
+            <p>Style Your Hair is Style Your Life</p>
+            <div class="banner-btn">
+                <a href=""><span></span>Find Out</a>
+                <a href=""><span></span>Read More</a>
+            </div>
+        </div>
+    </section>
+    
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#banner">HOME</a></li>
+                <li><a href="#feature">FEATURE</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#textimonial">TESTIMONIALS</a></li>
+                <li><a href="#footer">MEET US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="manuBtn">
+        <img src="img/menu.png">
+    </div>
+
+    <section id="feature">
+        <div class="title-text">
+            <p>FEATURE</p>
+            <h1>Why Choose Us</h1>
+        </div>
+        <div class="feature-box">
+            <div class="features">
+                <h1>Experinced Staff</h1>
+                <div class="feature-desc">
+                    <div class="feature-icon">
+                        <i class="fa fa-shield"></i>
+                    <div class="feature-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. maxime nisi doloribus iusto perfere.</p>
+                    </div>
+                    </div>
+                </div>
+                <h1>Pre Booking Online</h1>
+                <div class="feature-desc">
+                    <div class="feature-icon">
+                        <i class="fa fa-check-square-o"></i>
+                    <div class="feature-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. maxime nisi doloribus iusto perfere.</p>
+                    </div>
+                    </div>
+                </div>
+                <h1>Affordable Cost</h1>
+                <div class="feature-desc">
+                    <div class="feature-icon">
+                        <i class="fa fa-inr"></i>
+                    
+                    <div class="feature-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. maxime nisi doloribus iusto perfere.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="features-img">
+                <img src="img/barber-man.jpg" alt="">
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <script>
+        var manuBtn = document.getElementById('manuBtn')
+        var sideNav = document.getElementById('sideNav')
+        var menu = document.getElementById('menu')
+
+        sideNav.style.right = "-250px"
+        manuBtn.onclick = function(){
+            if( sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+                menu.src = "img/menu.png";
+            }
+            else{
+                sideNav.style.right = "-250px";
+                menu.src = "img/menu.png"
+            }
+        }
+    </script>
+</body>
+</html>
